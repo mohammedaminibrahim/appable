@@ -1,3 +1,4 @@
+import 'package:firstapp/src/utils/theme/text_theme.dart';
 import 'package:firstapp/src/utils/theme/theme.dart';
 import 'package:flutter/material.dart';
 
@@ -33,9 +34,9 @@ class AppHome extends StatelessWidget {
         padding: const EdgeInsets.all(20.0),
         child: ListView(
           children: [
-             Text("Heading", style: Theme.of(context).textTheme.headline2,),
-             Text("Sub-Heading", style: Theme.of(context).textTheme.subtitle2,),
-             Text("Paragraph", style: Theme.of(context).textTheme.bodyText2,),
+             Text("Heading", style: TTextTheme.darkTextTheme.headline2,),
+             Text("Sub-Heading", style: TTextTheme.lightTextTheme.subtitle2,),
+             Text("Paragraph", style: TTextTheme.darkTextTheme.bodyText2,),
             ElevatedButton(onPressed: () {}, child: const Text("Elevated Button")),
             OutlinedButton(onPressed: () {}, child: const Text("Outlined Button")),
             const Padding(padding: EdgeInsets.all(20.0),
