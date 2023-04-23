@@ -34,13 +34,26 @@ dependencies:
 
 
   # The following adds the Cupertino Icons font to your application.
-  # Use with the CupertinoIcons class for iOS style icons.
+  # Use w ith the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   google_fonts: ^4.0.3
+  flutter_native_splash: ^2.2.18
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
+flutter_native_splash:
+  color: "#f7f6f1"
+  color_dark: "#272727"
+  image: assets/images/book.jpg
+  image_dark: assets/images/book.jpg
+
+  android_12:
+    image: assets/images/book.jpg
+    icon_background_color: "#f7f6f1"
+    image_dark: assets/images/book.jpg
+    icon_background_color_dark: "#272727"
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
