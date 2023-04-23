@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(const App());
+// void main() => runApp(const App());
+void main() {
+  runApp(const MaterialApp(home: App(),));
+}
 
 class App extends StatelessWidget {
   const App({Key? key}) : super(key: key);
@@ -8,9 +11,10 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(),
-      darkTheme: ThemeData(),
-      home: AppHome()
+      theme: ThemeData(brightness: Brightness.light),
+      darkTheme: ThemeData(brightness: Brightness.dark),
+      themeMode: ThemeMode.system,
+      home: const AppHome()
     );
   }
 }
